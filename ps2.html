@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//*Create a program for booking movie tickets where a user chooses a movie and seat category. The options should be:
+// Movie:
+//************** Action: Standard Seat - 10rs, VIP Seat - 20rs
+// ***********Comedy: Standard Seat - 8rs, VIP Seat - 15rs
+//**Drama: Standard Seat -6rs, VIP Seat - 12rs
+
+var movie=prompt("Enter Type of Movie").toLowerCase()
+switch(movie){
+    case"action":
+    var seat=prompt("enter seat type").toLowerCase()
+    switch(seat){
+        case"standard":
+        console.log("Your ticket is booked for action movie with a standard seat of rupees=10RS")
+        break
+        case"vip":
+        console.log("Your ticket is booked for action movie with a VIP seat of rupees=20RS")
+        default:
+            console.log("please enter a valid seat type")
+    }
+    break
+    case"comedy":
+    var Seat=prompt("enter seat type").toLowerCase()
+    switch(Seat){
+        case"standard":
+        console.log("Your ticket is booked for Comedy movie with a standard seat of rupees=8RS")
+        break
+        case"vip":
+        console.log("Your ticket is booked for Comedy movie with a VIP seat of rupees=15RS")
+        break
+        default:
+            console.log("please enter a valid seat type")
+    }
+    break
+    case"drama":
+    var seats=prompt("enter seat type").toLowerCase()
+    switch(seats){
+        case"standard":
+        console.log("Your ticket is booked for Drama movie with a standard seat of rupees=6RS")
+        break
+        case"vip":
+        console.log("Your ticket is booked for Drama movie with a VIP seat of rupees=12RS")
+        break
+        default:
+            console.log("please enter a valid seat type")
+    }
+    break
+default:
+    console.log("plese enter a valid movie type")
+}
+
+// 10k karunakar Sir Office: Design a program that calculates discounts based on product categories (Electronics, Clothing, Grocery). Each category has specific discount rates for different products:
+// Electronics: Mobile - 5%, Laptop - 10%
+// Clothing: Men - 15%, Women - 20%
+// Grocery: Fruits - 5%, Vegetables - 10%
+
+
+// var category=prompt("Please enter your product category").toLowerCase()
+// switch(category){
+//     case"electronics":
+//     var ml=prompt("please enter mobile or laptop").toLowerCase()
+//     switch(ml){
+//         case"mobile":
+//         console.log("your discount for mobile is 5%")
+//         break
+//         case"laptop":
+//         console.log("your discount for laptop is 10%")
+//         break
+//         default:
+//             console.log("please enter a valid electronics device")
+//     }
+//     break
+//     case"clothing":
+//     var mn=prompt("please enter a valid clothing type (MEN OR WOMEN)").toLowerCase()
+//     switch(mn){
+//         case"men":
+//         console.log("discount for mens wear is 15%")
+//         break
+//         case"women":
+//         console.log("discount for women wear is 20%")
+//         break
+//         default:
+//             console.log("please enter valid cloting type")
+//     }
+//     break
+//     case"grocery":
+//     var fv=prompt("please select a grocery type(fruits or vegetables)").toLowerCase()
+//     switch(fv){
+//         case"fruits":
+//         console.log("your discount for fruits is 5%")
+//         break
+//         case"vegetables":
+//         console.log("your discount for vegetables is 10%")
+//         break
+//         default:
+//             console.log("Please enter a valid grocery type")
+//     }
+//     break
+//     default:
+//         console.log("please enter a valid category")
+// }
+
+// ****************10k karunakar Sir Office: Write a travel booking system that allows a user to select a mode of transport (Flight, Train, Bus) and then choose a class or category:
+// ******Flight: Economy, Business
+// ******Train: Sleeper, AC Class
+// ******Bus: Standard, Luxury
+var mode=prompt("please enter your mode of transport").toLowerCase()
+switch(mode){
+    case"flight":
+    var eb=prompt("Please select class type(Economy or Business)")
+    switch(eb){
+        case"economy":
+        console.log("Your Flight Ticket is Booked for Economy Class")
+        break
+        case"business":
+        console.log("Your Flight Ticket is Booked for Business Class")
+        break
+        default:
+            console.log("Please enter valid Flight class type ")
+    }
+    break
+    case"train":
+    var sac=prompt("Please enter a valid class(Sleeper or AC class)").toLowerCase()
+    switch(sac){
+        case"sleeper":
+        console.log("Your Train Ticket is Booked for Sleeper class")
+        break
+        case"ac":
+        console.log("Your Train Ticket is Booked for AC class")
+        break
+        default:
+            console.log("please enter valid Train class type")
+    }
+    break
+    case"bus":
+    var sl=prompt("Please select the valid  category(Standard or Luxury)").toLowerCase()
+    switch(sl){
+        case"standard":
+        console.log("Your Bus Ticket is Booked for Standard category")
+        break
+        case"luxury":
+        console.log("Your Bus Ticket is Booked for Luxury category")
+        break
+        default:
+            console.log("Please enter valid bus category type")
+    }
+    break
+    default:
+        console.log("please enter a valid mode of transport")
+}
+    </script>
+</body>
+</html>
